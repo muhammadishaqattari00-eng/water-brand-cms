@@ -572,3 +572,13 @@ async function changePassword() {
    Init — load all data from Firebase
 ════════════════════════════════ */
 loadAllData();
+window.showPage = showPage;
+window.saveOrder = saveOrder;
+window.cancelOrderEdit = cancelOrderEdit;
+window.saveShop = saveShop;
+window.cancelShopEdit = cancelShopEdit;
+window.calcTotal = calcTotal;
+window.saveSettings = saveSettings;
+window.changePassword = changePassword;
+window.logout = logout;
+window.renderOrders = renderOrders;
