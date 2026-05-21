@@ -572,13 +572,26 @@ async function changePassword() {
    Init — load all data from Firebase
 ════════════════════════════════ */
 loadAllData();
-window.showPage = showPage;
-window.saveOrder = saveOrder;
+
+/* ════════════════════════════════
+   Expose functions to global scope
+   (required because this file uses
+   type="module" which scopes all
+   functions — onclick in HTML needs
+   them on window)
+════════════════════════════════ */
+window.showPage        = showPage;
+window.saveOrder       = saveOrder;
+window.editOrder       = editOrder;
+window.deleteOrder     = deleteOrder;
 window.cancelOrderEdit = cancelOrderEdit;
-window.saveShop = saveShop;
-window.cancelShopEdit = cancelShopEdit;
-window.calcTotal = calcTotal;
-window.saveSettings = saveSettings;
-window.changePassword = changePassword;
-window.logout = logout;
-window.renderOrders = renderOrders;
+window.calcTotal       = calcTotal;
+window.renderOrders    = renderOrders;
+window.waOrder         = waOrder;
+window.saveShop        = saveShop;
+window.editShop        = editShop;
+window.deleteShop      = deleteShop;
+window.cancelShopEdit  = cancelShopEdit;
+window.waShop          = waShop;
+window.saveSettings    = saveSettings;
+window.changePassword  = changePassword;
